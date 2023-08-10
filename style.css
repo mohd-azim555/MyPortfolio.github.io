@@ -1,0 +1,72 @@
+*{
+    background-color: rgb(38, 202, 207);
+    margin: 0px;
+  padding: 0px;
+ 
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;  
+    background-color: #333;
+}
+
+li{
+    float: left;
+    
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+#about h1,P{
+        text-align: center;
+    
+        
+      }
+#resume h3{
+    text-align: center;
+   
+} 
+#resume a{
+    margin: 0%;
+    text-align: center;
+    display: inline;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+#contact h2{
+    
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: rgb(12, 11, 11);
+    padding: 1.5em 0;
+    text-align: center;
+    padding: 1em 0;
+
+    }
+
+
