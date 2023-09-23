@@ -1,45 +1,25 @@
 *{
-    background-color: rgb(38, 202, 207);
+    background-color: rgb(223, 249, 250);
     margin: 0px;
   padding: 0px;
  
 }
 
-ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;  
-    background-color: #333;
-}
+
 
 li{
     float: left;
     
 }
 
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #333;
-}
+
 
 li a:hover{
-    background-color: #111;
+    background-color: rgb(143, 204, 255);
 }
 
-#about h1,P{
-        text-align: center;
-    
-        
-      }
-#resume h3{
-    text-align: center;
-   
-} 
+
+
 #resume a{
     margin: 0%;
     text-align: center;
