@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary , style="background-color: #e3f2fd">
+  
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img src="/portfolio.png" alt="portfolio" width="150" height="50">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -21,15 +24,18 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Servies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  More
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Resume</a></li>
+                  <li><a class="dropdown-item" href="#">Blogs</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -40,18 +46,32 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-  
- 
+      
+  <div class="bg">
+     <h1 class="left">
+      <span id="intro"></span>
+       <br>
+       I'm a 
+       <span id="element"></span>
+     </h1>
+     
+
+  </div>
    <section class="container" id="about">
        <h1>About Me</h1>
        <P>Hey my name is Mohammad Azim</P>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, eligendi! Consequuntur, ullam laboriosam officia dignissimos ducimus amet eos numquam a quod distinctio accusamus possimus esse. Est incidunt officia sunt vero.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus quidem repellat illum. Consequuntur, non modi. Tenetur ut reiciendis esse eaque at, ea dolores, quis quisquam eveniet nisi, animi possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nostrum vel amet expedita fugiat quia ducimus perferendis esse repudiandae architecto. Repellat similique veritatis tenetur in? Eius, facilis rerum! Ipsa, quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque? Voluptates enim accusamus officiis rem labore aspernatur quasi vel fugiat neque totam minima, reiciendis quos necessitatibus quibusdam et magnam sunt!Lorem
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis exercitationem, itaque maiores veniam illum nisi explicabo, cum pariatur repellat repellendus architecto culpa dignissimos deleniti tenetur nostrum omnis vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi a doloremque obcaecati illum, dignissimos consequuntur tenetur aliquam, quasi totam fugit omnis voluptas rerum accusamus neque laudantium pariatur debitis hic!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente blanditiis nobis animi, nesciunt sed maiores enim. Qui optio, iusto autem repudiandae aliquam incidunt, vitae laudantium amet quaerat sint ipsum commodi!
+       </p>
     
    </section>
+  
   <br>
    <section id="resume">
        <h3>This my resume</h3>
@@ -71,9 +91,12 @@
    
 
 
-   <footer>
+   <footer class="">
     <p>&copy; 2023 Mohammad Azim. All rights reserved.</p>
 </footer>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+
 </html>

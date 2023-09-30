@@ -1,21 +1,46 @@
 *{
-    background-color: rgb(223, 249, 250);
+    
     margin: 0px;
   padding: 0px;
+ box-sizing: border-box;
  
 }
 
-
-
 li{
     float: left;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+.bg{
     
+    background-image: url("bg.jpg");
+     /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left{
+   padding-top: 180px;
+   padding-left: 80px;
+}
+#element{
+    color: rgb(29, 115, 245);
+}
+
+.navbar-scrolled{
+    transition: all 1s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 
-
 li a:hover{
-    background-color: rgb(143, 204, 255);
+    background-color: rgb(206, 233, 255);
 }
 
 
@@ -38,10 +63,10 @@ li a:hover{
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
-    background-color: #222;
+    background-color: rgb(126, 126, 126);
     color: rgb(12, 11, 11);
     padding: 1.5em 0;
     text-align: center;
@@ -49,4 +74,7 @@ footer {
 
     }
 
+#about{
+    padding-top: 100px;
+}
 
