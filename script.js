@@ -8,10 +8,10 @@ const navE =document.getElementById('navbar');
       }
      });
 
-     // typed.js for Intr
+     // typed.js for Intro
      var typed = new Typed('#intro', {
         strings: ['Hi! My name is AZIM'],
-        typeSpeed: 150,
+        typeSpeed: 100,
       });
 // typed.js for developer
      var typed = new Typed('#element', {

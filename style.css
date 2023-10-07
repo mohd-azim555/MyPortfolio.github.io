@@ -13,28 +13,71 @@ body, html {
     height: 100%;
     margin: 0;
   }
-.bg{
-    
-    background-image: url("bg.jpg");
-     /* Full height */
-  height: 100%;
+.page1{
+    display: flex;
 
-  /* Center and scale the image nicely */
+  /* background-color: rgb(39, 252, 241); */
+  
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .left{
-   padding-top: 180px;
-   padding-left: 80px;
+    position: relative;
+    height: 75%;
+    width: 40%;
+    top: 15%;
+    left: 5%;
+    /* background-color: red; */
+   padding-top: 100px;
 }
+/* Styling for the download button */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect */
+  .download-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+
+.right{
+
+    position: relative;
+    height: 75%;
+    width: 45%;
+    top: 15%;
+    left: 10%;
+    /* background-color: rgb(148, 250, 128); */
+   
+}
+.right>img{
+    position: absolute;
+    width: 60%;
+    right:20%;
+    top: 5%;
+}
+
 #element{
     color: rgb(29, 115, 245);
 }
 
 .navbar-scrolled{
     transition: all 1s;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(222, 255, 249);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
