@@ -16,13 +16,20 @@ body, html {
 .page1{
     display: flex;
 
-  /* background-color: rgb(39, 252, 241); */
-  
+  /* background-color: rgba(156, 161, 168, 0.7); */
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+#particles-js{
+    height: 100%;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    position: absolute;
+}
+
 .left{
     position: relative;
     height: 75%;
@@ -66,9 +73,9 @@ body, html {
 }
 .right>img{
     position: absolute;
-    width: 60%;
-    right:20%;
-    top: 5%;
+    width: 80%;
+    right:10%;
+    top: 0%;
 }
 
 #element{
@@ -119,5 +126,19 @@ footer {
 
 #about{
     padding-top: 100px;
+    
+    background-color: aqua;
+    height: 100%;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+#Servies{
+    padding-top: 60px;
+    background-color: rgb(199, 248, 106);
+    height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
