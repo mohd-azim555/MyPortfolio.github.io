@@ -5,10 +5,22 @@
  box-sizing: border-box;
  
 }
+.navbar-brand{
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #3283da;
+}
 
 li{
     float: left;
+    margin-left:10px ;
 }
+.nav-link:hover{
+    color: rgb(30, 142, 187);
+    background-color: rgb(206, 233, 255);
+    border-radius: 18px;
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -16,7 +28,7 @@ body, html {
 .page1{
     display: flex;
 
-  /* background-color: rgba(156, 161, 168, 0.7); */
+  /* background-color: rgba(166, 168, 170, 0.7); */
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,13 +100,6 @@ body, html {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-
-li a:hover{
-    background-color: rgb(206, 233, 255);
-}
-
-
-
 #resume a{
     margin: 0%;
     text-align: center;
@@ -106,23 +111,6 @@ li a:hover{
     border-radius: 3px;
     transition: background-color 0.3s ease;
 }
-
-#contact h2{
-    
-    text-align: center;
-}
-
-footer {
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(126, 126, 126);
-    color: rgb(12, 11, 11);
-    padding: 1.5em 0;
-    text-align: center;
-    padding: 1em 0;
-
-    }
 
 #about{
     padding-top: 100px;
@@ -143,6 +131,27 @@ footer {
   background-size: cover;
 }
 
+#contact a{
+    text-decoration: none;
+}
+.contact-detail{
+    display: flex;
+}
+
+footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(126, 126, 126);
+    color: rgb(12, 11, 11);
+    padding: 1.5em 0;
+    text-align: center;
+    padding: 1em 0;
+
+    }
+
+
+/* mobile responsive code */
 
 @media screen and (max-width:600px) {
     .page1{

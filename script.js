@@ -20,3 +20,4 @@ const navE =document.getElementById('navbar');
         backSpeed:50,
         loop:true
       });
+
