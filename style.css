@@ -4,6 +4,7 @@
   padding: 0px;
  box-sizing: border-box;
  
+ 
 }
 .navbar-brand{
     margin-left: 15px;
@@ -111,31 +112,163 @@ body, html {
     border-radius: 3px;
     transition: background-color 0.3s ease;
 }
-
-#about{
-    padding-top: 100px;
-    
-    background-color: aqua;
-    
-  /* height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover; */
+/* About me Section */
+#about_head{
+    background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 80px;
+}
+#about_head:hover {
+    background-color: #338ff1;
+    border-color: #2584e9;
 }
 
-#Servies{
-    padding-top: 60px;
-    background-color: rgb(199, 248, 106);
-    height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#about-me {
+    padding: 60px 0;
+    background-color: rgb(215, 237, 255);
+    border-radius: 20px;
 }
 
-#contact a{
-    text-decoration: none;
+#about-me h2 {
+    color: #343a40;
+    font-size: 2.5rem;
 }
-.contact-detail{
-    display: flex;
+
+#about-me p {
+    color: #495057;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#profile-img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* This is Services Section */
+#service_head{
+    background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 80px;
+}
+#service_head:hover {
+    background-color: #338ff1;
+    border-color: #2584e9;
+}
+
+#services {
+    padding: 60px 0;
+}
+
+#services h2 {
+    color: #343a40;
+    font-size: 2.5rem;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    background-color: #d6fffc;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.service-title {
+    color: #343a40;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.service-description {
+    color: #495057;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* This is Contact Section */
+#contact_head{
+    background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 80px;
+}
+#contact_head:hover {
+    background-color: #338ff1;
+    border-color: #2584e9;
+}
+
+#contact {
+    padding: 60px 0;
+}
+
+#contact h2 {
+    color: #343a40;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 800px; /* Set the maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px #007bff;
+    border-color: #007bff;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn:active {
+    transform: scale(0.95);
 }
 
 footer {
