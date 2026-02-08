@@ -41,9 +41,12 @@
             --border-color: #333;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
+        /* FIX: Prevent Horizontal Scroll/Whitespace issues */
+        html, body {
+            width: 100%;
             overflow-x: hidden;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
             color: var(--text-dark);
             background-color: var(--bg-white);
             transition: background-color 0.3s, color 0.3s;
@@ -113,6 +116,8 @@
         .hero-section {
             position: relative;
             min-height: 100vh;
+            /* FIX: Use dynamic viewport height for mobile browsers */
+            min-height: 100dvh; 
             display: flex;
             align-items: center;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -938,10 +943,16 @@
 
     <script>
         // 1. INITIALIZE AOS ANIMATIONS
+        // Initialize AOS, but refreshing on window load to prevent layout issues
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100
+        });
+        
+        // REFRESH AOS AFTER PAGE LOAD to fix potential crop issues due to image loading
+        window.addEventListener('load', () => {
+            AOS.refresh();
         });
 
         // 2. NAVBAR & BACK TO TOP SCROLL EFFECT
