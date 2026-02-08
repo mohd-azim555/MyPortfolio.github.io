@@ -155,18 +155,11 @@
             color: var(--primary-color);
         }
 
-        /* Updated Hero Image Style - Removed border & Blended Background */
+        /* Updated Hero Image Style - Removed border & Removed Blend Mode */
         .hero-img {
             max-width: 80%;
-            /* mix-blend-mode: multiply makes white background transparent on light themes */
-            mix-blend-mode: multiply; 
             filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
             background: transparent;
-        }
-        
-        /* Disable multiply in dark mode as it might make the image disappear */
-        [data-theme="dark"] .hero-img {
-            mix-blend-mode: normal;
         }
 
         .btn-custom {
@@ -454,7 +447,8 @@
                 padding-top: 100px;
                 text-align: center;
                 height: auto;
-                padding-bottom: 60px;
+                /* Increased padding-bottom to prevent content cutoff by floating buttons */
+                padding-bottom: 120px;
             }
             .hero-img {
                 max-width: 60%;
@@ -488,8 +482,8 @@
                     <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <!-- Changed to open Modal -->
-                <button type="button" class="btn btn-primary-custom d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                <!-- Removed d-none to make visible on mobile, added mb-3 for spacing in collapsed menu -->
+                <button type="button" class="btn btn-primary-custom mb-3 mb-lg-0" data-bs-toggle="modal" data-bs-target="#resumeModal">
                     Resume
                 </button>
             </div>
@@ -516,7 +510,7 @@
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0 text-center" data-aos="zoom-in">
                     <!-- Switched back to local image -->
-                    <img src="./img3.png" onerror="this.src='https://placehold.co/500x500/007bff/ffffff?text=Azim'" alt="Mohammad Azim" class="img-fluid hero-img">
+                    <img src="./hero.png" onerror="this.src='https://placehold.co/500x500/007bff/ffffff?text=Azim'" alt="Mohammad Azim" class="img-fluid hero-img">
                 </div>
             </div>
         </div>
@@ -563,6 +557,13 @@
                                 <span>SQL & NoSQL</span>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Added Resume Button for Mobile (hidden on large screens) -->
+                    <div class="text-center mt-4 d-lg-none">
+                        <button type="button" class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                            View Resume
+                        </button>
                     </div>
                 </div>
             </div>
@@ -919,10 +920,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0">
-                    <iframe src="./Azim_resume6.pdf" class="resume-iframe" title="Resume PDF"></iframe>
+                    <iframe src="./Azim_resume.pdf" class="resume-iframe" title="Resume PDF"></iframe>
                 </div>
                 <div class="modal-footer border-0">
-                    <a href="./Azim_resume6.pdf" target="_blank" class="btn btn-primary-custom">Download / Open in New Tab</a>
+                    <a href="./Azim_resume.pdf" target="_blank" class="btn btn-primary-custom">Download / Open in New Tab</a>
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -1044,7 +1045,7 @@
           {
             "id": 6,
             "title": "Azure DevOps CI/CD Pipelines",
-            "image": "https://images.unsplash.com/photo-1667372393119-c81c0cda0b18?auto=format&fit=crop&q=80&w=800",
+            "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=800",
             "tag": "DevOps",
             "summary": "Automating deployment for .NET and Java applications using Azure Pipelines and YAML.",
             "content": "Continuous Integration and Deployment (CI/CD) is the backbone of modern software engineering. Azure DevOps provides a powerful platform to automate this.<br><br><strong>Pipeline Steps:</strong><br>1. <strong>Build:</strong> Compiling code and running unit tests.<br>2. <strong>Dockerize:</strong> Creating container images and pushing to Azure Container Registry (ACR).<br>3. <strong>Deploy:</strong> pushing the new container to Azure Web Apps or Kubernetes (AKS).<br><br>This article walks through a complete YAML configuration for a multi-stage pipeline deploying to Development and Production environments."
